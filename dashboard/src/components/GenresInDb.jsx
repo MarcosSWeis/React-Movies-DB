@@ -24,12 +24,6 @@ class GenresInDb extends Component {
 
   render() {
     const genres = this.state.genres;
-    let loading;
-    if (genres.length === 0) {
-      loading = this.state.awaitColor;
-    } else {
-      loading = "";
-    }
     return (
       <div className="col-lg-6 mb-4">
         <div className="card shadow mb-4">
